@@ -21,10 +21,6 @@ export class LocusMember {
   membershipStatus: string;
 
   @ApiProperty({ nullable: true })
-  @Column({ name: 'assembly_id', nullable: true })
-  assemblyId: string;
-
-  @ApiProperty({ nullable: true })
   @Column({ name: 'urs_taxid', nullable: true })
   ursTaxid: string;
 
