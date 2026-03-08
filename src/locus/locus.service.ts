@@ -4,12 +4,9 @@ import { Repository } from 'typeorm';
 import { Role } from '../common/enums/role.enum';
 import { LocusQueryDto } from './dto/locus-query.dto';
 import { Locus } from './entities/locus.entity';
+import { SideloadEnum } from 'src/common/enums/sideload.enum';
 
 const RESTRICTED_REGION_IDS = [86118093, 86696489, 88186467];
-
-export enum SideloadEnum {
-  locusMembers = 'locusMembers',
-}
 
 const SORTABLE_FIELDS = new Set([
   'id',

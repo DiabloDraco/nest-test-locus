@@ -9,10 +9,7 @@ import {
   Max,
   Min,
 } from 'class-validator';
-
-export enum SideloadEnum {
-  locusMembers = 'locusMembers',
-}
+import { SideloadEnum } from 'src/common/enums/sideload.enum';
 
 export class LocusQueryDto {
   @ApiPropertyOptional({
