@@ -10,10 +10,10 @@ export class AuthController {
 
   @Post('login')
   @HttpCode(HttpStatus.OK)
-  @ApiOperation({ summary: 'Login and receive JWT token' })
+  @ApiOperation({ summary: 'Что бы залогиниться' })
   @ApiResponse({
     status: 200,
-    description: 'Returns JWT access token',
+    description: 'JWT токен возвращает типа токва',
     schema: { example: { accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...' } },
   })
   @ApiResponse({ status: 401, description: 'Invalid credentials' })

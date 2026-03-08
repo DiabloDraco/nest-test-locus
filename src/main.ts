@@ -13,10 +13,14 @@ async function bootstrap() {
       + 'Ограниченный доступ : `restricted / restricted123`'
     )
     .setVersion('1.0')
+    .addBearerAuth()
     .build();
+
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, documentFactory);
 
+  console.log(`Бекенд запущен тут: http://localhost:3000`);
+  console.log(`Сваггер тут: http://localhost:3000/api`);
 
   await app.listen(process.env.PORT ?? 3000);
 }
